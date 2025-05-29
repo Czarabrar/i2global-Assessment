@@ -4,7 +4,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 
 > **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
 
-download the node modules by following the command npm install.
+download the node modules by following the command ```npm install```
 ## Step 1: Start Metro
 
 First, you will need to run **Metro**, the JavaScript build tool for React Native.
@@ -63,26 +63,30 @@ If everything is set up correctly, you should see your new app running in the An
 
 This is one way to run your app — you can also build it directly from Android Studio or Xcode.
 
-## Step 3: Modify your app
+## Step 3: What did i do .
 
-Now that you have successfully run the app, let's make changes!
+in this react native application  i have implemented the required specification of getting weather based on the device location and the news based on the weather condition. 
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+i have applied react native linking features to avoid not getting user device location.
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+in this application the user can have their preferences to have the weather metrics in either celcius or fahrehnheit.
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+in this application the news can be filtered based on the current weather condition . where i have some reserved words to show up the news for 
+eg. if the weather is cool i have a set of reserved words i.e good , win , success, victory kinda words which will result in showing the user the news based on the current weather .
 
-## Congratulations! :tada:
+if there are no news articles for the weather condtion means a toast meassage will be shown and it will continue to display all the news articles. user can select news articles based on the following categories. general ( ie. weather based ) , technology, sports and business.
 
-You've successfully run and modified your React Native App. :partying_face:
+the weather data card has the new lottie animation for the user to have rich animations.
 
-### Now what?
+the five day forecast will be shown as five cards which we can see when we scroll the home page weather card for a better viewing expericce.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+the weather card animation will change based on the weather condtion . like if its raining the raining animation will be played, and if its hot the sun animation will be there and for cloud and breezy it follows on. 
 
+for weather i have used openweatherapi
+for news i have used SauravKanchan/NewsAPI git account.
+
+if the user device cant able to provide the user lat long value, the exception are handled . and a text will be shown that the location not available. 
+ 
 # Troubleshooting
 
 If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
