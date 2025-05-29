@@ -86,6 +86,8 @@ for weather i have used openweatherapi
 for news i have used SauravKanchan/NewsAPI git account.
 
 if the user device cant able to provide the user lat long value, the exception are handled . and a text will be shown that the location not available. 
+
+refer to the screenshots in the Assets/screenshots folder.
  
 # Troubleshooting
 
